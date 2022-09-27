@@ -1,4 +1,4 @@
-fis_role_arn                = "arn:aws:iam::225213251334:role/dpe-fis-role"
+fis_role_arn                = "arn:aws:iam::ACCOUNT_ID:role/IAM_ROLE_NAME"
 reboot_instances_percentage = 25
 reboot_instances_target_tags = {
   key   = "Name"
@@ -21,9 +21,9 @@ send_spot_instance_interruptions_target_tags = {
   key   = "Name"
   value = "fis-ec2-instance"
 }
-reboot_rds_instances_target_arn                             = ["arn:aws:rds:us-west-2:225213251334:db:mysql-instance-1"]
+reboot_rds_instances_target_arn                             = ["arn:aws:rds:us-west-2:ACCOUNT_ID:db:mysql-instance-1"]
 force_failover_db_instance                                  = false
-failover_db_cluster_target_arn                              = ["arn:aws:rds:us-west-2:225213251334:cluster:aurora-cluster-1"]
+failover_db_cluster_target_arn                              = ["arn:aws:rds:us-west-2:ACCOUNT_ID:cluster:aurora-cluster-1"]
 eks_nodegroup_instance_termination_percentage_per_nodegroup = 50
 eks_nodegroup_instance_termination_target_tags = {
   key   = "Name"
